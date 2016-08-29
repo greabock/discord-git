@@ -17,6 +17,7 @@ Route::get('/', function () {
 });
 
 Route::post('hook', function (BaseRequest $request){
-    $content = $request->getContent();
+    $content = json_encode(json_decode($request->getContent(), true), JSON_PRETTY_PRINT);
+    
     File::put(storage_path('hooks/hook_'.time().'.json'), $content);
 });
