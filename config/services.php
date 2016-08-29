@@ -40,5 +40,7 @@ return [
         'secret' => env('SMSCRU_SECRET'),
         'sender' => 'John_Doe'
     ],
-
+    'discord' => [
+        'token' => 'MjE5ODg2NjgwOTY0OTg4OTI4.CqYROA.YT34hkfRsA4baJSkPBWUaZJ4kzQ',
+    ],
 ];

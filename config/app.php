@@ -166,6 +166,8 @@ return [
         /*
          * Package Service Providers...
          */
+        NotificationChannels\Discord\DiscordServiceProvider::class,
+        Asvae\ApiTester\ServiceProvider::class,
 
         /*
          * Application Service Providers...

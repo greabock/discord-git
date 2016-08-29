@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Http\Request as BaseRequest;
+use NotificationChannels\Discord\Discord;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,8 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('hook', function (BaseRequest $request){
-    $content = json_encode(json_decode($request->getContent(), true), JSON_PRETTY_PRINT);
-    
-    File::put(storage_path('hooks/hook_'.time().'.json'), $content);
+
+Route::post('hook', function (BaseRequest $request,  Discord $discord){
+    $data = json_decode($request->getContent(), true);
+    $content = $data['head_commit']['url'];
+    $content .= "\n". $data['head_commit']['committer']['name'];
+    $discord->send('219876734240161793', compact('content'));
 });
+
+
