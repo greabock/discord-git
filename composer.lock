@@ -4,59 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6ebf341ebb1ca2a0c26aff6e8e24f7a3",
-    "content-hash": "b1fef3bc2e2ca71d7b3d67f0acdfe9df",
+    "hash": "7e8eb90793efc8283b686be2c09b21d5",
+    "content-hash": "f441a58992f2b1f961bde9017c512856",
     "packages": [
-        {
-            "name": "asvae/laravel-api-tester",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/asvae/laravel-api-tester.git",
-                "reference": "e73d3f56858ec87d4847a9dbd763cddaa6bac289"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/asvae/laravel-api-tester/zipball/e73d3f56858ec87d4847a9dbd763cddaa6bac289",
-                "reference": "e73d3f56858ec87d4847a9dbd763cddaa6bac289",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "laravel/framework": "5.2.*",
-                "mockery/mockery": "^0.9.5",
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "firebase/token-generator": "Token generator for firebase",
-                "ktamas77/firebase-php": "Keep your requests stored in cloud"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Asvae\\ApiTester\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yauheni Prakopchyk",
-                    "email": "ontrew@gmail.com"
-                }
-            ],
-            "description": "Api tester for Laravel Framework",
-            "keywords": [
-                "api",
-                "debug",
-                "laravel"
-            ],
-            "time": "2016-08-23 00:05:17"
-        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "V2.2.3",
@@ -552,58 +502,6 @@
             "time": "2016-06-24 23:00:38"
         },
         {
-            "name": "illuminate/notifications",
-            "version": "v5.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/notifications.git",
-                "reference": "df688e46eaa77a4f54d7c21570fd2cf51f0d5091"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/notifications/zipball/df688e46eaa77a4f54d7c21570fd2cf51f0d5091",
-                "reference": "df688e46eaa77a4f54d7c21570fd2cf51f0d5091",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/broadcasting": "5.3.*",
-                "illuminate/bus": "5.3.*",
-                "illuminate/contracts": "5.3.*",
-                "illuminate/support": "5.3.*",
-                "php": ">=5.6.4",
-                "ramsey/uuid": "~3.0"
-            },
-            "suggest": {
-                "guzzlehttp/guzzle": "Required to use the Slack transport.",
-                "illuminate/database": "Required to use the database transport (5.3.*).",
-                "nexmo/client": "Required to use the Nexmo transport."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Notifications\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "description": "The Illuminate Notifications package.",
-            "homepage": "https://laravel.com",
-            "time": "2016-08-26 17:24:59"
-        },
-        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -749,146 +647,17 @@
             "time": "2015-12-05 17:17:57"
         },
         {
-            "name": "jhaoda/socialite-mailru",
-            "version": "v2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jhaoda/socialite-mailru.git",
-                "reference": "2f4526921a50f06f68588a58d7237118cf467c01"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jhaoda/socialite-mailru/zipball/2f4526921a50f06f68588a58d7237118cf467c01",
-                "reference": "2f4526921a50f06f68588a58d7237118cf467c01",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "socialiteproviders/manager": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "JhaoDa\\SocialiteProviders\\MailRu\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "JhaoDa",
-                    "email": "jhaoda@gmail.com"
-                }
-            ],
-            "description": "Mail.ru OAuth2 Provider for Laravel Socialite",
-            "time": "2016-04-29 14:59:25"
-        },
-        {
-            "name": "jhaoda/socialite-odnoklassniki",
-            "version": "v2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jhaoda/socialite-odnoklassniki.git",
-                "reference": "095371af4796a10b2c4d88358b250e20c5ea725e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jhaoda/socialite-odnoklassniki/zipball/095371af4796a10b2c4d88358b250e20c5ea725e",
-                "reference": "095371af4796a10b2c4d88358b250e20c5ea725e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "socialiteproviders/manager": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "JhaoDa\\SocialiteProviders\\Odnoklassniki\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "JhaoDa",
-                    "email": "jhaoda@gmail.com"
-                }
-            ],
-            "description": "Odnoklassniki OAuth2 Provider for Laravel Socialite",
-            "time": "2016-04-29 14:57:25"
-        },
-        {
-            "name": "laravel-notification-channels/discord",
-            "version": "0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel-notification-channels/discord.git",
-                "reference": "30abdeb53604012b8e2516725b8767be26d3b50d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel-notification-channels/discord/zipball/30abdeb53604012b8e2516725b8767be26d3b50d",
-                "reference": "30abdeb53604012b8e2516725b8767be26d3b50d",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^6.2",
-                "illuminate/console": "^5.3@dev",
-                "illuminate/notifications": "^5.3@dev",
-                "illuminate/queue": "^5.3@dev",
-                "illuminate/support": "^5.3@dev",
-                "php": ">=5.6.4",
-                "textalk/websocket": "1.0.*"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9.5",
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "NotificationChannels\\Discord\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cody Scott",
-                    "email": "cs475x@icloud.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Laravel notification driver for Discord.",
-            "homepage": "https://github.com/laravel-notification-channels/discord",
-            "keywords": [
-                "channel",
-                "discord",
-                "driver",
-                "laravel",
-                "notification"
-            ],
-            "time": "2016-08-16 22:09:49"
-        },
-        {
             "name": "laravel/framework",
-            "version": "v5.3.4",
+            "version": "v5.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7159ffbadc79558a42ece2cdd1ec2e7e13105b5d"
+                "reference": "c63a7fb7066fea2bce91ace5c830c01d503abe6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7159ffbadc79558a42ece2cdd1ec2e7e13105b5d",
-                "reference": "7159ffbadc79558a42ece2cdd1ec2e7e13105b5d",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c63a7fb7066fea2bce91ace5c830c01d503abe6c",
+                "reference": "c63a7fb7066fea2bce91ace5c830c01d503abe6c",
                 "shasum": ""
             },
             "require": {
@@ -1002,7 +771,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-08-26 21:40:26"
+            "time": "2016-09-01 14:06:47"
         },
         {
             "name": "laravel/socialite",
@@ -1774,6 +1543,43 @@
             "time": "2016-08-02 18:39:32"
         },
         {
+            "name": "socialiteproviders/discord",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Discord.git",
+                "reference": "caeeb9746440d5a8f8d9b2cfbacd7b87224c1790"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Discord/zipball/caeeb9746440d5a8f8d9b2cfbacd7b87224c1790",
+                "reference": "caeeb9746440d5a8f8d9b2cfbacd7b87224c1790",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "socialiteproviders/manager": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Discord\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Eklund",
+                    "email": "eklundchristopher@gmail.com"
+                }
+            ],
+            "description": "Discord OAuth2 Provider for Laravel Socialite",
+            "time": "2016-08-25 17:58:41"
+        },
+        {
             "name": "socialiteproviders/manager",
             "version": "v2.1.8",
             "source": {
@@ -1814,80 +1620,6 @@
             ],
             "description": "Easily add new or override built-in providers in Laravel Socialite.",
             "time": "2016-08-04 18:16:57"
-        },
-        {
-            "name": "socialiteproviders/vkontakte",
-            "version": "v2.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SocialiteProviders/VKontakte.git",
-                "reference": "4b2e372f331ffa721c40167f4f94540790c7e439"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SocialiteProviders/VKontakte/zipball/4b2e372f331ffa721c40167f4f94540790c7e439",
-                "reference": "4b2e372f331ffa721c40167f4f94540790c7e439",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "socialiteproviders/manager": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SocialiteProviders\\VKontakte\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "DraperStudio",
-                    "email": "hello@draperstud.io"
-                }
-            ],
-            "description": "VKontakte OAuth2 Provider for Laravel Socialite",
-            "time": "2016-08-09 16:32:01"
-        },
-        {
-            "name": "socialiteproviders/yandex",
-            "version": "v2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SocialiteProviders/Yandex.git",
-                "reference": "5966339c8d784d7a6f411b2c667560d3bdc03622"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SocialiteProviders/Yandex/zipball/5966339c8d784d7a6f411b2c667560d3bdc03622",
-                "reference": "5966339c8d784d7a6f411b2c667560d3bdc03622",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "socialiteproviders/manager": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SocialiteProviders\\Yandex\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "DraperStudio",
-                    "email": "hello@draperstud.io"
-                }
-            ],
-            "description": "Yandex OAuth2 Provider for Laravel Socialite",
-            "time": "2016-08-04 13:49:06"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2778,55 +2510,17 @@
             "time": "2016-07-26 08:04:17"
         },
         {
-            "name": "textalk/websocket",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Textalk/websocket-php.git",
-                "reference": "ba2e5f9ef7cf24d536d1c864ae74b2a9599b86eb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Textalk/websocket-php/zipball/ba2e5f9ef7cf24d536d1c864ae74b2a9599b86eb",
-                "reference": "ba2e5f9ef7cf24d536d1c864ae74b2a9599b86eb",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.1.*",
-                "phpunit/phpunit-selenium": "1.3.3",
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WebSocket\\": "lib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fredrik Liljegren",
-                    "email": "fredrik.liljegren@textalk.se"
-                }
-            ],
-            "description": "WebSocket client and server",
-            "time": "2015-04-11 05:45:54"
-        },
-        {
             "name": "vlucas/phpdotenv",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
                 "shasum": ""
             },
             "require": {
@@ -2838,7 +2532,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -2863,10 +2557,60 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-06-14 14:14:52"
+            "time": "2016-09-01 10:05:43"
         }
     ],
     "packages-dev": [
+        {
+            "name": "asvae/laravel-api-tester",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asvae/laravel-api-tester.git",
+                "reference": "e73d3f56858ec87d4847a9dbd763cddaa6bac289"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asvae/laravel-api-tester/zipball/e73d3f56858ec87d4847a9dbd763cddaa6bac289",
+                "reference": "e73d3f56858ec87d4847a9dbd763cddaa6bac289",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "laravel/framework": "5.2.*",
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "firebase/token-generator": "Token generator for firebase",
+                "ktamas77/firebase-php": "Keep your requests stored in cloud"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Asvae\\ApiTester\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yauheni Prakopchyk",
+                    "email": "ontrew@gmail.com"
+                }
+            ],
+            "description": "Api tester for Laravel Framework",
+            "keywords": [
+                "api",
+                "debug",
+                "laravel"
+            ],
+            "time": "2016-08-23 00:05:17"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",

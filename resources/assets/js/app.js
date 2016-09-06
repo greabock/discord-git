@@ -1,20 +1,16 @@
+import Vue from 'vue'
+import vmDispatcher from  './components/Dispatcher.vue'
+import {getCookie} from './helpers.js'
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * include Vue and Vue Resource. This gives a great starting point for
- * building robust, powerful web applications using Vue and Laravel.
- */
+var VueResource = require('vue-resource');
+Vue.use(VueResource);
 
-require('./bootstrap');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the body of the page. From here, you may begin adding components to
- * the application, or feel free to tweak this setup for your needs.
- */
-
-Vue.component('example', require('./components/Example.vue'));
-
-const app = new Vue({
-    el: 'body'
+export default new Vue({
+    el: 'body',
+    components:{vmDispatcher},
 });
+
+Vue.http.interceptors.push((request, next) => {
+  request.headers['X-XSRF-TOKEN'] = getCookie('XSRF-TOKEN')
+  next()
+})

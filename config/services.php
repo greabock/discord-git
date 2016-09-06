@@ -40,7 +40,11 @@ return [
         'secret' => env('SMSCRU_SECRET'),
         'sender' => 'John_Doe'
     ],
+
     'discord' => [
-        'token' => 'MjE5ODg2NjgwOTY0OTg4OTI4.CqYROA.YT34hkfRsA4baJSkPBWUaZJ4kzQ',
+        'bot_token' => env('DISCORD_BOT'),
+        'client_id' => env('DISCORD_KEY'),
+        'client_secret' => env('DISCORD_SECRET'),
+        'redirect' => env('DISCORD_REDIRECT_URI'),
     ],
 ];

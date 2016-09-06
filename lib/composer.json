@@ -1,0 +1,13 @@
+{
+    "name": "greabock/discord-rest",
+    "description": "Discord rest client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Greabock",
+            "email": "greabock@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

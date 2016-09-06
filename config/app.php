@@ -166,13 +166,16 @@ return [
         /*
          * Package Service Providers...
          */
-        NotificationChannels\Discord\DiscordServiceProvider::class,
+
         Asvae\ApiTester\ServiceProvider::class,
+        SocialiteProviders\Manager\ServiceProvider::class,
+        Greabock\Discord\DiscordServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
+
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,

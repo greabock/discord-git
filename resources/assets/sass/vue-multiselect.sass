@@ -1,0 +1,50 @@
+.multiselect
+    min-height: 32px
+    &.multiselect--active
+        .multiselect__tags, .multiselect__tags:hover
+            border-color: $primary !important
+            border-bottom: 0 !important
+            border-radius: 3px 3px 0 0 !important
+    .multiselect__content
+        background-color: $black !important
+        border-color: $primary !important
+        border-radius: 0 0 3px 3px !important
+        color: $white !important
+        .multiselect__option--selected
+            background-color: $primary !important
+            color: $white !important
+            &:after
+                background-color: $primary !important
+                color: $white !important
+        .multiselect__option--highlight
+            background-color: $grey-darker
+    .multiselect__tags
+        transition: all ease .3s
+        padding: 4px 32px 0 4px !important
+        background-color: $black !important
+        min-height: 32px !important
+        border: 1px solid $black !important
+        border-radius: 3px !important
+        &:hover
+            border-color: $white !important
+        .multiselect__tag
+            background-color: $primary !important
+            margin-bottom: 4px !important
+            margin-right: 4px !important
+            border-radius: 3px !important
+            .multiselect__tag-icon
+                border-radius: 0 3px 3px 0 !important
+                &:hover
+                    background-color: darken($primary, 5%) !important
+                    &:after
+                        color: $white !important
+                &:after
+                    color: $grey-darker !important
+        input
+            width: 45px
+            background-color: $black !important
+            color: $white !important
+            margin-bottom: 4px !important
+    .multiselect__select
+        width: 32px !important
+        height: 32px !important

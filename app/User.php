@@ -2,29 +2,36 @@
 
 namespace App;
 
-use App\Core\Eloquent\Model;
 use Illuminate\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Foundation\Auth\Access\Authorizable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
-use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
+/**
+ * Class User
+ *
+ * @property string $name
+ * @property string $discordId
+ */
 class User extends Model implements
     AuthorizableContract,
-    AuthenticatableContract,
-    CanResetPasswordContract
+    AuthenticatableContract
 {
-    use Authenticatable, Authorizable, CanResetPassword, Notifiable;
+    use Authenticatable, Authorizable, Notifiable;
 
+    public $incrementing = false;
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'id',
+        'name',
+        'email',
+        'avatar',
     ];
 
     /**
@@ -33,6 +40,28 @@ class User extends Model implements
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password',
+        'remember_token',
     ];
+
+    public function routes()
+    {
+        return $this->hasMany(Route::class);
+    }
+
+    public function channels()
+    {
+        return $this->hasMany(Channel::class);
+    }
+
+    public function setToken($token)
+    {
+          $this->token()
+                ->updateOrCreate(['user_id' => $this->id], $token);
+    }
+
+    public function token()
+    {
+        return $this->hasOne(Token::class);
+    }
 }
